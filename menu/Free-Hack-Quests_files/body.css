@@ -1,12 +1,12 @@
 
 @font-face {
 	font-family: Pompadur; /* Гарнитура шрифта */
-	src: url(../fonts/font_for_captcha.ttf); /* Путь к файлу со шрифтом */
+	src: url(font_for_captcha.ttf); /* Путь к файлу со шрифтом */
 }
 
 @font-face {
 	font-family: Tempus Sans ITC; 
-	src: url(../fonts/TEMPSITC.ttf); /* Путь к файлу со шрифтом */
+	src: url(TEMPSITC.ttf); /* Путь к файлу со шрифтом */
 }
 
 
