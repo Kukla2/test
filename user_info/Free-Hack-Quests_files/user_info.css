@@ -9,16 +9,14 @@
 	text-decoration: none;
 	color: #000000;
 	margin:3px 3px 3px 3px;
-	border: 4px double #999999;
 }
-
 
 .user_info_row_skip {
 	display: table-row;
 	background: inherit;
 	height: 10px;
 }
-
+/*
 .user_info_row_top {
 	border-bottom: inherit;
 }
@@ -31,6 +29,7 @@
 .user_info_row_bottom {
 	border-top: inherit;
 }
+*/
 
 .user_info_param {
 	display: table-cell;
