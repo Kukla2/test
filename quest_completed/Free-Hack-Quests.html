@@ -1,0 +1,192 @@
+<html><head>
+	<title> Free-Hack-Quests </title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="Free-Hack-Quests_files/body.css">
+	<link rel="stylesheet" type="text/css" href="Free-Hack-Quests_files/site.css">
+	<link rel="stylesheet" type="text/css" href="Free-Hack-Quests_files/button3.css">
+	<link rel="stylesheet" type="text/css" href="Free-Hack-Quests_files/user_info.css">
+  <link rel="stylesheet" type="text/css" href="Free-Hack-Quests_files/quest_info.css">
+	<!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script -->
+	<!-- script src="http://malsup.github.com/jquery.form.js"></script -->	
+	<script type="text/javascript" src="Free-Hack-Quests_files/fhq_echo_head.js"></script>
+	
+	<style>
+
+		textarea.full_text
+		{	
+			margin: 0pt; 
+			width: 80%;
+			height: 200px;
+		}
+
+	</style>
+</head>
+	<body onload="" class="main">
+	<center>
+	<table cellpadding="10px" cellspacing="10px" height="100%" width="100%">
+		<tbody><tr class="menucolor">
+			<td valign="top" width="100">
+				<a href="http://localhost/fhq/main.php?"><img src="Free-Hack-Quests_files/minilogo.png"></a><br><br>
+				<center><b><font size="5">SibirCTF 2014 J</font></b><br>jeopardy<br><font size="1">change game in menu 'games'</font>
+				</center>
+			</td>
+			<td align="left" valign="top" width="82%">
+					
+<script>
+</script>
+<table width="100%">
+			<tbody><tr>
+				<td>
+					<p>
+					<a class="button3 button3-menu" id="btn_user_info" href="javascript:void(0);" onclick="load_content_page('user_info');">admin</a> 
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('games');">Games</a>
+					<!-- a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('teams');">Teams</a -->
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('news');">News</a>
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('feedback_my');">Feedback</a>
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('hacker_girl');">Hacker girl here</a>
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page2('rules');">Rules</a>
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="exit();">logout</a>
+					<!-- a class="button3" href="javascript:void(0);" onclick="">||||||</a -->
+					
+					</p>
+				<p>
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('quests_allow');">Tasks Open</a>
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('quests_process');">Tasks Current</a> 
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page('quests_completed');">Tasks Completed</a> 
+					<a class="button3 button3-menu" href="javascript:void(0);" onclick="load_content_page2('scoreboard');">Scoreboard</a>
+					your score is <font id="view_score" size="5">43</font> <a class="button3 button3-menu" href="javascript:void(0);" onclick="recalculate_score();">recalculate score</a>
+				</p>
+				<!-- And I almost forgot... You can look at <a class="button3" href="javascript:void(0);" onclick="load_content_page('dr_zoyberg');">Dr. Zoyberg</a> .  -->
+			
+		</td></tr>
+	</tbody></table>
+		<table cellpadding="10px">
+		<tbody><tr>
+			<td>
+				Admin:
+					<!-- quest.php?action=add -->
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('feedbacks');">Messages</a>
+				    <a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('users');">Users</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('answer_list');">Answer List</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('answer_list' , { backup : '' } );">Backup Answer List</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('statistics');">Statistics</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('add_quest');">Add new quest</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('add_news');">Add News</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('add_user');">Add user</a><br><br>
+					System:	<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page('update_db');">Update DB</a>
+					<a class="button3 ad" href="javascript:void(0);" onclick="load_content_page2('init_scoreboard');">init scoreboard</a>
+					
+			</td>
+		</tr>
+		</tbody></table>
+				<br>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" height="100%" valign="top">
+				<center>
+					<div id="content_page"> 
+		    <a href="javascript:void(0);" id="reload_content" onclick="
+				document.getElementById('view_score').innerHTML = '43';"></a>
+			<div class="quest_info_table">
+				<div class="quest_info_row">
+					<div class="quest_info_param">Quest ID:</div>
+					<div class="quest_info_value">46</div>
+				</div>
+				<div class="quest_info_row">
+					<div class="quest_info_param">Name:</div>
+					<div class="quest_info_value">33333333333333</div>
+				</div>
+				<div class="quest_info_row">
+					<div class="quest_info_param">Score:</div>
+					<div class="quest_info_value">+2</div>
+				</div>
+				<div class="quest_info_row">
+					<div class="quest_info_param">Subject:</div>
+					<div class="quest_info_value">33333333333333</div>
+				</div>
+				<div class="quest_info_row">
+					<div class="quest_info_param">Short Text:</div>
+					<div class="quest_info_value">33333333333333</div>
+				</div>
+				<div class="quest_info_row">
+					<div class="quest_info_param">Author:</div>
+					<div class="quest_info_value">33333333333333</div>
+				</div>
+				<div class="quest_info_skip">
+				</div>
+		
+				<div class="quest_info_row">
+					<div class="quest_info_param">Full Text:</div>
+					<div class="quest_info_value">
+						<pre>33333333333333
+33333333333333
+33333333333333
+33333333333333</pre>
+					</div>
+				</div>
+				<div class="quest_info_row">
+					<div class="quest_info_param">Quest completed. Date: </div>
+					<div class="quest_info_value">2014-10-28 02:55:24</div>
+				</div>
+				<div class="quest_info_skip">
+				</div>
+				
+				<div class="quest_info_skip">
+				</div>
+				<div class="quest_info_skip">
+				</div>
+				<div class="quest_info_skip">
+				</div>
+				<div class="quest_info_row quest_info_row_admin">
+					<div class="quest_info_param">Admin panel:</div>
+					<div class="quest_info_value">
+					</div>
+				</div>
+			
+						<div class="quest_info_row quest_info_row_admin">
+							<div class="quest_info_param">Select files:</div>
+							<div class="quest_info_value">
+								<input name="file" id="file" size="27" required="" multiple="" type="file">
+								<a class="button3 ad" href="javascript:void(0);" onclick="
+									var files = document.getElementById('file').files;
+									// upload_file(files,46);
+									load_content_page_files(files, 'upload_files', { id : 46 } );
+								">Upload</a>
+							</div>
+						</div>
+						<div class="quest_info_skip">
+						</div>
+					
+						<div class="quest_info_row quest_info_row_admin">
+							<div class="quest_info_param"></div>
+							<div class="quest_info_value">
+								<a class="button3 ad" href="javascript:void(0);" onclick="
+									load_content_page('edit_quest', { id : 46 } );
+								">Edit Quest</a>
+								<a class="button3 ad" href="http://localhost/fhq/content_page.php?content_page=export_quest&amp;id=46">Export</a>
+								<a class="button3 ad" href="javascript:void(0);" onclick="
+									if(delete_quest())
+									{
+										load_content_page('delete_quest', { id : 46} );
+									}
+								">Delete Quest</a>
+							</div>
+						</div>
+			</div></div>
+				</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<center>
+					<font size="1">Copyright © 2011-2014 sea-kg. Design by Taisiya Lebedeva.</font>
+					<!-- pre><div id="debug_info"/></pre -->
+				</center>
+			</td>
+		</tr>
+	</tbody></table>
+	</center>
+	
+	 </body></html>
